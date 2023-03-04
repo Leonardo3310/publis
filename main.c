@@ -21,9 +21,9 @@ struct Datos {
    int codigo;
    char nombres[70];
    char cedula[13];
-   dia;
-   mesanyo;
-   islamico;
+   int dia;
+   int mesanyo;
+   signed int islamico;
 } datos;
 
 unsigned int getFileSize ( FILE * );
