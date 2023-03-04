@@ -13,14 +13,14 @@
 #define NACIMIENTO_ISLAMICO 2
 #define FILE_SIZE ( NOMBRES_SIZE + CEDULA_SIZE + CODIGO_SIZE + DIA_SIZE + MESANYO_SIZE + NACIMIENTO_ISLAMICO )
 
-//TO DO: Declare el tipo y tamaño adecuados para que las variables puedan contener el correspondiente valor
+//TO DO: Declare el tipo y tamaï¿½o adecuados para que las variables puedan contener el correspondiente valor
 //del archivo de entrada
 // NO MODIFIQUE NINGUNA OTRA COSA EN EL PROGRAMA
 // Estructura para manejar los datos de entrada.
 struct Datos {
-   codigo;
-   nombres;
-   cedula;
+   int codigo;
+   char nombres[70];
+   char cedula[13];
    dia;
    mesanyo;
    islamico;
@@ -73,8 +73,8 @@ unsigned int getFileSize ( FILE * f ){
 } // getFileSize
 
 /**
- * Lee del archivo un número binario de n bytes en la variable apuntada por p.
- * El número se supone en formato big endian y lo convierte a little endian.
+ * Lee del archivo un nï¿½mero binario de n bytes en la variable apuntada por p.
+ * El nï¿½mero se supone en formato big endian y lo convierte a little endian.
  */
 unsigned int getNumber ( FILE * f, char * p, unsigned int n ){
 
